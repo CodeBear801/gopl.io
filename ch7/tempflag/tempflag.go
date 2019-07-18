@@ -10,7 +10,7 @@ import (
 	"flag"
 	"fmt"
 
-	"gopl.io/ch7/tempconv"
+	"github.com/CodeBear801/gopl.io/ch7/tempconv"
 )
 
 //!+

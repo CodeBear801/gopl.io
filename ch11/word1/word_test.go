@@ -24,7 +24,7 @@ func TestNonPalindrome(t *testing.T) {
 //!-test
 
 // The tests below are expected to fail.
-// See package gopl.io/ch11/word2 for the fix.
+// See package github.com/CodeBear801/gopl.io/ch11/word2 for the fix.
 
 //!+more
 func TestFrenchPalindrome(t *testing.T) {

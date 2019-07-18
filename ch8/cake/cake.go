@@ -7,7 +7,7 @@
 // a concurrent cake shop with numerous parameters.
 //
 // Use this command to run the benchmarks:
-// 	$ go test -bench=. gopl.io/ch8/cake
+// 	$ go test -bench=. github.com/CodeBear801/gopl.io/ch8/cake
 package cake
 
 import (
