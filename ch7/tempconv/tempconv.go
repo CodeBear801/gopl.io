@@ -38,7 +38,7 @@ type celsiusFlag struct{ Celsius }
 func (f *celsiusFlag) Set(s string) error {
 	var unit string
 	var value float64
-	//fmt.Printf("+++%s\n", s)
+	fmt.Printf("+++%s\n", s)
 	fmt.Sscanf(s, "%f%s", &value, &unit) // no error check needed
 	switch unit {
 	case "C", "°C":
@@ -59,7 +59,7 @@ func (f *celsiusFlag) Set(s string) error {
 // default value, and usage, and returns the address of the flag variable.
 // The flag argument must have a quantity and a unit, e.g., "100C".
 func CelsiusFlag(name string, value Celsius, usage string) *Celsius {
-	//fmt.Printf("+++ %v,%v,%v\n", name, value, usage)
+	fmt.Printf("+++ %v,%v,%v\n", name, value, usage)
 	f := celsiusFlag{value}
 	flag.CommandLine.Var(&f, name, usage)
 	return &f.Celsius

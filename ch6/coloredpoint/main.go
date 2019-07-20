@@ -45,6 +45,13 @@ func main() {
 	q.ScaleBy(2)
 	fmt.Println(p.Distance(q.Point)) // "10"
 	//!-main
+
+	fmt.Println("call init1")
+	init1()
+
+	fmt.Println("call init2")
+	init2()
+
 }
 
 /*
@@ -53,7 +60,7 @@ func main() {
 //!-error
 */
 
-func init() {
+func init1() {
 	//!+methodexpr
 	p := Point{1, 2}
 	q := Point{4, 6}
@@ -69,7 +76,7 @@ func init() {
 	//!-methodexpr
 }
 
-func init() {
+func init2() {
 	red := color.RGBA{255, 0, 0, 255}
 	blue := color.RGBA{0, 0, 255, 255}
 
